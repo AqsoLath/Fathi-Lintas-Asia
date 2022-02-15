@@ -2,6 +2,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'img-custom': "url('../image/hero3.jpeg')",
+        },
       colors: {
             'ungu1': "#3d0066",
             'ungu2': "#5c0099",
@@ -19,6 +22,8 @@ module.exports = {
           akaya: "'Akaya Telivigala', cursive ",
           poppins: "'Poppins', serif",
           bree: "'Bree Serif', cursive", 
+          russo: "'Russo One', sans-serif", 
+          lato: "'Lato', sans-serif", 
         }
     },
   },
