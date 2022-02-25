@@ -636,11 +636,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
-.my-2{
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .ml-auto{
   margin-left: auto;
 }
@@ -709,8 +704,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 12rem;
 }
 
-.h-full{
-  height: 100%;
+.h-\[280px\]{
+  height: 280px;
 }
 
 .h-96{
@@ -721,24 +716,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 150px;
 }
 
-.h-\[420\]{
-  height: 420;
-}
-
-.h-\[420px\]{
-  height: 420px;
-}
-
-.h-\[320px\]{
-  height: 320px;
-}
-
-.h-\[300px\]{
-  height: 300px;
-}
-
-.h-\[280px\]{
-  height: 280px;
+.h-auto{
+  height: auto;
 }
 
 .w-20{
@@ -917,6 +896,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-\[3\.75rem\]{
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+}
+
+.px-\[3\.5rem\]{
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
 .pt-4{
   padding-top: 1rem;
 }
@@ -927,6 +926,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-2{
   padding-top: 0.5rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
+}
+
+.pr-4{
+  padding-right: 1rem;
 }
 
 .text-left{
@@ -971,10 +978,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-5{
   line-height: 1.25rem;
-}
-
-.tracking-tight{
-  letter-spacing: -0.025em;
 }
 
 .tracking-wide{
@@ -1073,6 +1076,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+@media (min-width: 640px){
+  .sm\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .sm\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 @media (min-width: 768px){
   .md\:h-auto{
     height: auto;
@@ -1080,6 +1095,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:flex-row{
     flex-direction: row;
+  }
+
+  .md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:pl-0{
+    padding-left: 0px;
+  }
+
+  .md\:pr-0{
+    padding-right: 0px;
   }
 }
 
