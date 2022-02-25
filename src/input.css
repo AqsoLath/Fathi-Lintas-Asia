@@ -26,4 +26,7 @@
     .tombol {
         @apply text-center rounded-full border-2 border-ungu2 bg-gradient-to-b from-ungu2 to-ungu4 text-white hover:no-underline tracking-tight hover:text-slate-50 hover:from-ungu4 hover:to-ungu3 transition;
     }
+    .tombol-wa {
+        @apply text-center rounded-full border-2 border-green-600 bg-gradient-to-b from-green-500 to-green-400 text-white hover:no-underline hover:text-slate-50 hover:from-green-300 hover:to-green-200 cursor-pointer transition;
+    }
 }
