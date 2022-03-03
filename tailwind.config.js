@@ -25,6 +25,8 @@ module.exports = {
           bree: "'Bree Serif', cursive", 
           russo: "'Russo One', sans-serif", 
           lato: "'Lato', sans-serif", 
+          grotesk: "'Grotesk Light', cursive", 
+          minionpro: "'Minion Pro', cursive", 
         }
     },
   },

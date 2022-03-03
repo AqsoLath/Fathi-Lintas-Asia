@@ -433,6 +433,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+@font-face {
+  font-family: Grotesk Light;
+
+  font-weight: 400;
+
+  src: url(../fonts/grotesk.ttf);
+}
+
+@font-face {
+  font-family: Minion Pro;
+
+  font-weight: 400;
+
+  src: url(../fonts/minionpro-bold.otf);
+}
+
 *, ::before, ::after{
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -515,7 +531,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .subjudul{
   margin-bottom: 0.25rem;
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Minion Pro', cursive;
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
@@ -523,15 +539,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(92 0 153 / var(--tw-text-opacity));
 }
 
+@media (min-width: 1024px){
+  .subjudul{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 .subsubjudul{
   margin-bottom: 0.25rem;
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Minion Pro', cursive;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(61 0 102 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .subsubjudul{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 .tombol{
@@ -634,11 +664,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.my-20{
-  margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 .ml-auto{
@@ -863,14 +888,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-attachment: fixed;
 }
 
-.bg-center{
-  background-position: center;
-}
-
-.bg-top{
-  background-position: top;
-}
-
 .bg-bottom{
   background-position: bottom;
 }
@@ -920,16 +937,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 3.5rem;
 }
 
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .pt-4{
   padding-top: 1rem;
 }
@@ -950,8 +957,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.font-poppins{
-  font-family: 'Poppins', serif;
+.font-grotesk{
+  font-family: 'Grotesk Light', cursive;
 }
 
 .font-inter{
@@ -981,6 +988,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold{
@@ -1160,5 +1172,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
