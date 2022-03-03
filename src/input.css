@@ -30,3 +30,16 @@
         @apply text-center rounded-full border-2 border-green-600 bg-gradient-to-b from-green-500 to-green-400 text-white hover:no-underline hover:text-slate-50 hover:from-green-300 hover:to-green-200 cursor-pointer transition;
     }
 }
+
+@layer base {
+    @font-face {
+    font-family: Grotesk Light;
+    font-weight: 400;
+    src: url(../fonts/grotesk.ttf);
+  }
+  @font-face {
+    font-family: Minion Pro;
+    font-weight: 400;
+    src: url(../fonts/minionpro-bold.otf);
+  }
+}
